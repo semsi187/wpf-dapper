@@ -1,0 +1,21 @@
+﻿<Window x:Class="wpf_dapper.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpf_dapper"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <DataGrid x:Name="manytomany" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Author Id" Binding="{Binding Id}" />
+                <DataGridTextColumn Header="Author Name" Binding="{Binding AuthorName}" />
+                <DataGridTextColumn Header="Book Name" Binding="{Binding BookName}" />
+                <DataGridTextColumn Header="Book Price" Binding="{Binding Price}" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>
